@@ -1,3 +1,4 @@
+require 'pry'
 class Backer
   attr_accessor :name, :backed_projects
 
@@ -8,7 +9,8 @@ class Backer
 
  def back_project(project)
    @backed_projects << project
-   project.backers << self
+   project.backers << self #logan.back_project(hoverboard)
  end
 
 end
+binding.pry
